@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica',sans-serif;
+}
+.all-thing{
+    width: 100%;
+    height: 1250px;
+    position: relative;
+}
+.main{
+    width: 100%;
+    height: 850px;
+    background-color: salmon;
+}
+footer{
+    width: 100%;
+    height: 350px;
+    background-color: thistle;
+}
+header{
+    width: 100%;
+    height: 100px;
+    position: relative;
+}
+nav{
+    height: 100px;
+    display: flex;
+    float: right;
+}
+nav ul li{
+    display: inline-block;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-right: 25px;
+}
+nav ul li a{
+    list-style-type: none;
+    text-decoration: none;
+    color: rgb(59, 59, 59);
+}
+.account{
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    float: right;
+    margin-right: 15px;
+}
+.account-img{
+    width: 50px;
+    height: 50px;
+}
+nav ul li a::after{
+    border-bottom: 2px solid #000;
+    width: 0%;
+    height: 3px;
+    transition: all 0.5s ease-in-out;
+}
+nav ul li a::after:hover{
+    border-bottom: 2px solid #000;
+    width: 100%;
+    height: 3px;
+}
+.shape{
+    position: absolute;
+    width: 100%;
+    height: 222px;
+    background-color: thistle;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media sceen{max-width: 480px;
+    width: 100%;
+    height: 1250px;
+    
+
+}
